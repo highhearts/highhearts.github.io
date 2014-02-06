@@ -16,7 +16,7 @@
     <?php include("nav.php"); ?>
   <!-- end #sidebar1 --></div>
   <div id="mainContent">
-    <h1>New Album Now Available<h1>
+    <h1>New Album Now Available... Foobar!<h1>
     <div class="col">
    <div style="float:left;width:400px"><a href="http://highhearts.bandcamp.com/album/your-heart-is-a-muscle-the-size-of-your-fist"><img src="img/highhearts_cover.jpg" border="0" /></a></div>
    <div style="float:left;margin-left:-20px"><p>Get it at:</p>
