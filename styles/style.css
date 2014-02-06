@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+body  {
+    background: #ddd123;
+    font-family: Helvetica, sans-serif;
+    color: #333333;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+}
+.twoColFixLtHdr {
+background-position: right bottom; 
+background-repeat: no-repeat; 
+background-attachment: fixed; 
+}
+
+.matt {
+	background-image: url("../img/matt_green.jpg"); 
+}
+
+.shaun {
+	background-image: url("../img/shaun_bg.jpg"); 
+}
+
+.john {
+	background-image: url("../img/john_bg.jpg"); 
+}
+
+.justin {
+	background-image: url("../img/justin_bg.jpg"); 
+}
+
+.band {
+	background-image: url("../img/band_bg.jpg"); 
+}
+
+.twoColFixLtHdr #container { 
+	width: 1060px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+.twoColFixLtHdr #header {  
+	padding: 0 10px 0 0px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColFixLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.twoColFixLtHdr #sidebar1 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 200px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	padding: 15px 0px 15px 0px;
+}
+#navigation { 
+ width: 200px; 
+} 
+#navigation ul { 
+ list-style: none; 
+ margin: 0; 
+ padding: 0; 
+} 
+#navigation li { 
+ border-bottom: 1px solid #ddd123; 
+} 
+
+#navigation li a:link, #navigation li a:visited  { 
+ font-size: 90%; 
+ display: block; 
+ padding: 0.4em 0 0.4em 0.5em; 
+ border-left: 0px solid #8b0000; 
+ border-right: 0px solid #8b0000; 
+ background-color: #ddd123; 
+ color: #8b0000; 
+ text-decoration: none; 
+}
+
+#navigation li.current a{ 
+ background-color: #8b0000; 
+ color: #FFFFFF; 
+} 
+
+#navigation li a:hover { 
+ background-color: #8b0000; 
+ color: #FFFFFF; 
+}
+
+.twoColFixLtHdr #mainContent { 
+	margin: -10px 0 0 220px; /* the left margin on this div element creates the column down the left side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+} 
+
+.twoColFixLtHdr #mainContent p { 
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12pt;
+	line-height:1.5em;
+}
+
+.twoColFixLtHdr img {
+ border:0;
+}
+
+.twoColFixLtHdr #footer { 
+	padding: 0 10px 0 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */ 
+	border-top: 1px solid #333333; 
+} 
+.twoColFixLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+
+DIV.col { 
+position: relative; 
+float: left;
+width: 800px; 
+}
+
+.twoColFixLtHdr #mainContent img.bg {float:right;}
+
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+/* Shows! */
+.schedule_date
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 22px;
+    FONT-WEIGHT: bold
+}
+
+ dl.event
+{
+margin: .1em 0;
+border: 0px solid #000;
+padding: 0;
+}
+
+.event dt
+{
+position: relative;
+border: 0px solid #000;
+left: .5em;
+top: .5em;
+width: 7em;
+padding: 0;
+font-weight: bold;
+text-align:center;
+}
+
+.event dd
+{
+border-left: 1px solid #000;
+margin: -3.0em 0 0 8em;
+padding: 0 0 .5em .5em;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12pt;
+	line-height:1.5em;
+}
+.event hr {
+	border: 1px;
+	color: #333333;
+	height: 1px;
+	width: 100%;
+}
+
+DIV.Hrule        {border-style: dotted; border-color: #333333; border-width: 0px 0px 1px 0px ; height: 1px; width: 99%; padding: 0px 0px 0px 0px; margin: 15px 0px 45px 0px;     background: transparent; color: #FFFFFF;  }
