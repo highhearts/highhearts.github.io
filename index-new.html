@@ -4,6 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>High Hearts</title>
 <link rel="stylesheet" href="styles/style-new.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<script
+src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="wrap">
@@ -28,7 +33,7 @@
         It can make the hair stand up on the backs of our necks. It can make us feel alive.</p>
 
         <p>Music brings people together, and we are all in this together. We must be.
-        Music is responsible for our most treasured friendships, keeping us close.</p>
+        Music is responsible for our most treasured friendships, keeping us close over the years.</p>
 
         <p>Music is a language. It can express ideas that other languages cannot. Deftly
         controlled vibrations of air can reach
@@ -37,15 +42,31 @@
         <p>In this way, music can be used as a tool; a weapon even. It can be a culture bomb
           that can start a revolution, and the world needs a revolution.</p>
 
-        <p>This is our manifesto; this is why we make music.</p>
+        <p>This is our manifesto. This is why we make music.</p>
 
-        <p> - High Hearts<br/><span class="heart">❤</span></p>
+        <p><span class="heart">❤</span></p>
 
         </div>
 
+        <audio id="ambiance" autoplay="autoplay" muted>
+            <source src="mp3s/together.mp3" type="audio/mp3">
+        </audio>
+
+        <a id="controls" href="#" onclick="var audioElm = document.getElementById('ambiance'); audioElm.muted = !audioElm.muted;">
+          <i id="mute" class="fa fa-volume-off" style="font-size:48px;color:white;" aria-hidden="true"></i>
+          <i id="unmute" class="fa fa-volume-up" style="font-size:48px;color:white;display:none;" aria-hidden="true"></i>
+        </a>
 
       </div>
   </div>
 
+  <script type="text/javascript">
+    $(function() {
+      $( '#controls' ).on( "click", function() {
+        $( '#mute' ).toggle();
+        $( "#unmute" ).toggle();
+      });
+    });
+  </script>
 </body>
 </html>

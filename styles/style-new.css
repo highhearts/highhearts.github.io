@@ -240,3 +240,9 @@ ul.menu {
     color: #e75f5f;
     text-decoration: none;
 }
+
+#controls {
+    position: fixed;
+    top: 1em;
+    left: 2em;
+}
