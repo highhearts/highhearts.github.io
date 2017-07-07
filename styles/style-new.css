@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@media (min-width: 38em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  color: #fff;
+  background-color: #010101;
+  background-image: url(../img/bg2.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-shadow: 1px 1px #000000;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+.content {
+	margin-bottom: 4rem;
+}
+
+/*
+ * Wrapper
+ *
+ * The wrapper is used to position site content when the sidebar is toggled. We
+ * use an outter wrap to position the sidebar without interferring with the
+ * regular page content.
+ */
+
+.wrap {
+  position: relative;
+  width: 100%;
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
+  }
+
+
+/*
+ * Container
+ *
+ * Center the page content.
+ */
+
+.container {
+  max-width: 38rem;
+  padding-left:  1rem;
+  padding-right: 1rem;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+@media (min-width: 38em) {
+  .container {
+    max-width: 32rem;
+  }
+}
+@media (min-width: 56em) {
+  .container {
+    max-width: 38rem;
+  }
+}
+
+/* Headings */
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  color: #e75f5f;
+  letter-spacing: -.025rem;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+	font-size: 1.4rem;
+}
+
+h1.post-title {
+	font-size: 1.4rem;
+}
+
+h2 {
+	margin-top: 1rem;
+	font-size: 1.2rem;
+}
+
+h3, h4, h5 {
+	font-size: 1rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+
+}
+
+h4, h5, h6 {
+  margin-top: 1rem;
+}
+
+/* Body text */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: 'Quattrocento', serif;
+  line-height: 1.5;
+}
+
+/* links */
+
+a, .post-title a {
+  color: #841212;
+  text-decoration: none;
+}
+
+a strong {
+  color: inherit;
+}
+
+/* `:focus` is linked to `:hover` for basic accessibility */
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+
+/* Misc */
+
+hr {
+  margin-top: 60px;
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+
+.masthead-title {
+  font: 400 76px/80px 'Oswald', sans-serif;
+  color: #fff;
+  letter-spacing: .02em;
+  text-align: center;
+  margin: 90px 0 40px 0;
+  text-transform: uppercase;
+}
+
+/*
+ * Masthead
+ *
+ * Super small header above the content for site name and short description.
+ */
+
+.masthead {
+	margin-bottom: 3rem;
+	text-align: center;
+	padding-top: .8rem;
+	padding-bottom: .8rem;
+  /* border-bottom: 1px solid #eee; */
+}
+
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #505050;
+  line-height: 1.5rem;
+}
+.masthead-title a {
+	color: #e75f5f;
+}
+
+.masthead-title small {
+  font-family: "Quattrocento", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0;
+}
+
+h3.masthead-title {
+	font-size: 1.8rem;
+	margin-top: 2px;
+}
+
+.heart {
+  color: #e75f5f;
+  font-size: 1.4rem;
+  display: inline-block;
+  text-align: right;
+}
+
+@media (max-width: 48em) {
+  .masthead-title {
+    text-align: center;
+  }
+  .masthead-title small {
+    display: none;
+  }
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    font-family: "Quattrocento", serif;
+    font-size: .8rem;
+    font-weight: 400;
+    color: #c0c0c0;
+    letter-spacing: .1rem;
+    padding: .2rem;
+}
+
+.menu li a {
+    color: #c0c0c0;
+}
+
+.menu li a:hover, .menu li a:focus {
+    color: #e75f5f;
+    text-decoration: none;
+}
